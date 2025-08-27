@@ -12,6 +12,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Hind madurai google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- daisy ui cdn -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@5"
@@ -20,8 +27,14 @@
     />
     <!-- tailwind cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- customs tailwind css -->
+    <style type="text/tailwindcss">
+      @theme {
+        --font-hindMadurai: "Hind Madurai", sans-serif;
+      }
+    </style>
   </head>
-  <body class="bg-[#F5FFF6]">
+  <body class="bg-[#F5FFF6] font-hindMadurai">
     <!-- header section start -->
     <header>
       <!-- nav section start -->
@@ -68,7 +81,7 @@
 
       <!-- banner section start -->
       <section
-        class="banner-parent h-[240px] bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] pt-5 pb-5 pl-1 md:pl-0 pr-1 md:pr-0 "
+        class="banner-parent h-[240px] bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] pt-5 pb-5 pl-1 md:pl-0 pr-1 md:pr-0"
       >
         <div>
           <img
@@ -90,8 +103,12 @@
     <!-- header section end -->
 
     <!-- main section start -->
-    <section class="pl-5 pt-5 pb-8 md:pr-[60px] md:pl-[60px] md:pt-[40px] md:pb-[40px]">
-      <div class="card-parent grid grid-cols-2 grid-rows-9 gap-5 md:grid-cols-4 md:grid-rows-3 md:gap-x-0 md:gap-y-10">
+    <section
+      class="pl-5 pt-5 pb-8 md:pr-[60px] md:pl-[60px] md:pt-[40px] md:pb-[40px]"
+    >
+      <div
+        class="card-parent grid grid-cols-2 grid-rows-9 gap-5 md:grid-cols-4 md:grid-rows-3 md:gap-x-0 md:gap-y-10"
+      >
         <!-- card 1 -->
         <div class="card w-55 md:w-75 bg-base-100 shadow-sm">
           <div class="card-body">
@@ -396,25 +413,29 @@
           <div class="card-body">
             <!-- history start -->
             <div class="flex justify-between items-center">
-              <div class="flex gap-2 items-center">
+              <div class="flex gap-1 md:gap-2 items-center">
                 <i class="fa-solid fa-clock text-gray-400"></i>
                 <h1 class="font-semibold">Call History</h1>
               </div>
-              <button class="flex justify-center items-center gap-2 w-[80px] h-[40px] rounded-3xl bg-[#00A63E] text-lg text-white cursor-pointer">
+              <button
+                class="flex justify-center items-center gap-2 w-[80px] h-[40px] rounded-3xl bg-[#00A63E] text-lg text-white cursor-pointer"
+              >
                 Clear
               </button>
             </div>
             <!-- history end -->
-             <!-- card -->
-              <div class="bg-[#FAFAFA] flex justify-between items-center p-2 rounded-lg mb-2">
-                <div>
-                    <h1 class="text-sm font-semibold">Fire Service Number</h1>
-                    <span class="text-gray-600">999</span>
-                </div>
-                <div>
-                    <p class="text-gray-600">08-57-45</p>
-                </div>
+            <!-- card -->
+            <div
+              class="bg-[#FAFAFA] flex justify-between items-center p-2 rounded-lg mb-2"
+            >
+              <div>
+                <h1 class="text-sm font-semibold">Fire Service Number</h1>
+                <span class="text-gray-600">999</span>
               </div>
+              <div>
+                <p class="text-gray-600">08-57-45</p>
+              </div>
+            </div>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta,
             non! Voluptates, aliquid praesentium nostrum sunt aliquam sint dolor
             nihil quis, adipisci vel nulla repudiandae veniam maiores quos
