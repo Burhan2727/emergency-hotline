@@ -59,13 +59,13 @@
             <div
               class="flex justify-center items-center gap-2 w-[100px] h-[50px] rounded-3xl bg-[#F5FFF6]"
             >
-              <p class="font-bold">0</p>
+              <p id="love-count" class="font-bold">0</p>
               <img class="w-[30px] h-[30px]" src="./assets/heart.png" alt="" />
             </div>
             <div
               class="flex justify-center items-center gap-2 w-[100px] h-[50px] rounded-3xl bg-[#F5FFF6]"
             >
-              <p class="font-bold">100</p>
+              <p id="decrement-call" class="font-bold">100</p>
               <img class="w-[23px] h-[23px]" src="./assets/coin.png" alt="" />
             </div>
             <div
@@ -122,11 +122,13 @@
                   alt=""
                 />
               </div>
-              <i class="fa-solid fa-heart text-gray-400 text-xl"></i>
+              <div id="love1" class="cursor-pointer">
+                <i class="fa-solid fa-heart text-gray-400 text-xl"></i>
+              </div>
             </div>
-            <h2 class="font-bold text-lg">National Emergency Number</h2>
-            <p class="text-sm text-gray-400">National Emergency</p>
-            <span class="font-bold">999</span>
+            <h2 id="card1-title" class="font-bold text-lg">National Emergency Number</h2>
+            <p id="card1-subtitle" class="text-sm text-gray-400">National Emergency</p>
+            <span id="card1-num" class="font-bold">999</span>
             <div
               class="flex justify-center items-center rounded-lg bg-[#F2F2F2] w-13 p-1 text-gray-500"
             >
@@ -136,7 +138,7 @@
               <button class="btn bg-white w-[48%]">
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
-              <button class="btn bg-[#00A63E] w-[48%]">
+              <button id="card1-call-btn" class="btn bg-[#00A63E] w-[48%]">
                 <i class="fa-solid fa-phone"></i> Call
               </button>
             </div>
@@ -155,7 +157,9 @@
                   alt=""
                 />
               </div>
-              <i class="fa-solid fa-heart text-gray-400 text-xl"></i>
+              <div id="love2" class="cursor-pointer">
+                <i class="fa-solid fa-heart text-gray-400 text-xl"></i>
+              </div>
             </div>
             <h2 class="font-bold text-lg">Police Helpline Number</h2>
             <p class="text-sm text-gray-400">Police</p>
@@ -188,7 +192,9 @@
                   alt=""
                 />
               </div>
-              <i class="fa-solid fa-heart text-gray-400 text-xl"></i>
+              <div id="love3" class="cursor-pointer">
+                <i class="fa-solid fa-heart text-gray-400 text-xl"></i>
+              </div>
             </div>
             <h2 class="font-bold text-lg">Fire Service Number</h2>
             <p class="text-sm text-gray-400">Fire Service</p>
@@ -221,7 +227,9 @@
                   alt=""
                 />
               </div>
-              <i class="fa-solid fa-heart text-gray-400 text-xl"></i>
+              <div id="love4" class="cursor-pointer">
+                <i class="fa-solid fa-heart text-gray-400 text-xl"></i>
+              </div>
             </div>
             <h2 class="font-bold text-lg">Ambulance Service</h2>
             <p class="text-sm text-gray-400">Ambulance</p>
@@ -254,7 +262,9 @@
                   alt=""
                 />
               </div>
-              <i class="fa-solid fa-heart text-gray-400 text-xl"></i>
+              <div id="love5" class="cursor-pointer">
+                <i class="fa-solid fa-heart text-gray-400 text-xl"></i>
+              </div>
             </div>
             <h2 class="font-bold text-lg">Women & Child Helpline</h2>
             <p class="text-sm text-gray-400">Help</p>
@@ -287,7 +297,9 @@
                   alt=""
                 />
               </div>
-              <i class="fa-solid fa-heart text-gray-400 text-xl"></i>
+              <div id="love6" class="cursor-pointer">
+                <i class="fa-solid fa-heart text-gray-400 text-xl"></i>
+              </div>
             </div>
             <h2 class="font-bold text-lg">Anti-Corruption Helpline</h2>
             <p class="text-sm text-gray-400">Anti-Corruption</p>
@@ -320,7 +332,9 @@
                   alt=""
                 />
               </div>
-              <i class="fa-solid fa-heart text-gray-400 text-xl"></i>
+              <div id="love7" class="cursor-pointer">
+                <i class="fa-solid fa-heart text-gray-400 text-xl"></i>
+              </div>
             </div>
             <h2 class="font-bold text-lg">Electricity Helpline</h2>
             <p class="text-sm text-gray-400">Electricity Outage</p>
@@ -353,7 +367,9 @@
                   alt=""
                 />
               </div>
-              <i class="fa-solid fa-heart text-gray-400 text-xl"></i>
+              <div id="love8" class="cursor-pointer">
+                <i class="fa-solid fa-heart text-gray-400 text-xl"></i>
+              </div>
             </div>
             <h2 class="font-bold text-lg">Brac Helpline</h2>
             <p class="text-sm text-gray-400">Brac</p>
@@ -386,7 +402,9 @@
                   alt=""
                 />
               </div>
-              <i class="fa-solid fa-heart text-gray-400 text-xl"></i>
+              <div id="love9" class="cursor-pointer">
+                <i class="fa-solid fa-heart text-gray-400 text-xl"></i>
+              </div>
             </div>
             <h2 class="font-bold text-lg">Bangladesh Railway Helpline </h2>
             <p class="text-sm text-gray-400">Bangladesh Railway</p>
@@ -425,34 +443,15 @@
             </div>
             <!-- history end -->
             <!-- card -->
-            <div
-              class="bg-[#FAFAFA] flex justify-between items-center p-2 rounded-lg mb-2"
-            >
-              <div>
-                <h1 class="text-sm font-semibold">Fire Service Number</h1>
-                <span class="text-gray-600">999</span>
-              </div>
-              <div>
-                <p class="text-gray-600">08-57-45</p>
-              </div>
+            <div id="right-container">
+                
             </div>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta,
-            non! Voluptates, aliquid praesentium nostrum sunt aliquam sint dolor
-            nihil quis, adipisci vel nulla repudiandae veniam maiores quos
-            repellendus. Sunt fugit quae reprehenderit repellendus beatae,
-            laudantium numquam perferendis qui sint aspernatur amet enim soluta,
-            sed aut. Dolorem, velit dolore! Ipsa eos blanditiis eaque sapiente
-            odit, quos similique excepturi iure sequi enim sit aut eveniet.
-            Laborum doloremque quibusdam quisquam et unde ea quo praesentium
-            iste ad odio laboriosam eligendi quam corrupti obcaecati quae nisi,
-            consequuntur temporibus cum hic ab ut animi porro distinctio. Eius
-            accusantium praesentium aliquam laudantium fuga commodi architecto
-            esse.
           </div>
         </div>
       </div>
       <!-- card end -->
     </section>
     <!-- main section end -->
+     <script src="./script.js"></script>
   </body>
 </html>
