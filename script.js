@@ -61,11 +61,8 @@ let decrementCallValue = parseInt(document.getElementById("decrement-call").inne
 document.getElementById("card1-call-btn")
 .addEventListener("click", function(){
     decrementCallValue = decrementCallValue - 20
-    const card1Title = document.getElementById("card1-title");
     const card1TitleValue = document.getElementById("card1-title").innerText;
-    const card1Subtitle = document.getElementById("card1-subtitle");
     const card1SubtitleValue = document.getElementById("card1-subtitle").innerText;
-    const card1Num = document.getElementById("card1-num");
     const card1NumValue = document.getElementById("card1-num").innerText;
     if(decrementCallValue < 0){
         alert("Insufficient Coin! you need minimum 20 coins for calling")
@@ -92,4 +89,11 @@ document.getElementById("card1-call-btn")
     `
     rightContainer.appendChild(div)
 })
+// clear fetures start
+document.getElementById("clear-btn")
+.addEventListener("click", function(){
+    const rightContainer = document.getElementById("right-container");
+    rightContainer.innerHTML = ""
+})
+// clear fetures end
 // ----------------call button features end-----------------------
