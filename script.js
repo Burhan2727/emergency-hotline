@@ -74,11 +74,6 @@ document.getElementById("card1-call-btn")
     alert(`calling ${card1SubtitleValue} ${card1NumValue}`)
     
     document.getElementById("decrement-call").innerText = decrementCallValue;
-    // const cardObj = {
-    //     cardTitle: card1TitleValue,
-    //     cardNum: card1NumValue,
-    //     date: new Date().toLocaleTimeString()
-    // }
     const date = new Date().toLocaleTimeString()
     const rightContainer = document.getElementById("right-container");
     const div = document.createElement("div");
